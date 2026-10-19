@@ -1,0 +1,16 @@
+[StartTime]
+wheel 2.1 assembly-ultem rim.MFC=9s
+[SolverState]
+wheel 2.1 assembly-ultem rim.MFC=2
+[MainFrame]
+wheel 2.1 assembly-ultem rim.MFC=MCAAAAAAAAAAAAAACAAAAAAAAADIPPPPAADIPPPPPPPPPPPPPPPPPPPPMADAAAAADLBAAAAAEHEAAAAAGICAAAAA
+[ShowMin]
+wheel 2.1 assembly-ultem rim.MFC=No
+[SolverType]
+wheel 2.1 assembly-ultem rim.MFC=Linear Analysis
+[StudyType]
+wheel 2.1 assembly-ultem rim.MFC=0
+[StudyName]
+wheel 2.1 assembly-ultem rim.MFC=ultem rim
+[Solver]
+wheel 2.1 assembly-ultem rim.MFC=Iterative

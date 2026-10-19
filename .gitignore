@@ -1,0 +1,127 @@
+# ==============================================================================
+# Git Ignore Configuration for IRoCU-2024 (ISRO Robotics Challenge - URSC)
+# Rover Project: Team OBSERACT | Jadavpur University
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Embedded & Firmware Build Artifacts (STM32 / PlatformIO / STM32CubeIDE)
+# ------------------------------------------------------------------------------
+.pio/
+.pioenvs/
+.piolibdeps/
+.vscode/
+.idea/
+*.hex
+*.bin
+*.elf
+*.o
+*.obj
+*.d
+*.map
+*.lst
+Debug/
+Release/
+*.launch
+*.sublime-project
+*.sublime-workspace
+
+# ------------------------------------------------------------------------------
+# Python & Machine Learning Caches
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook Caches & Ultralytics Runs
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+runs/
+*/runs/*
+wandb/
+
+# ------------------------------------------------------------------------------
+# Oversized Checkpoints, Wheel Archives & Pretrained Weights (>50MB / GitHub Limits)
+# Note: Lightweight models like best_25.pt (6.7MB), best35.pt, blockmodel.pt are tracked.
+# ------------------------------------------------------------------------------
+*.pkl
+*.jl
+*new_inv*
+*_jl
+new_inv_jl
+*.deb
+*.whl
+*.dfu
+*.iso
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+
+# Ignore large YOLO checkpoints over GitHub's limit
+**/yolov9/*.pt
+**/yolov8m.pt
+yolov8m.pt
+
+# Ignore large downloaded datasets and raw zip archives
+*.zip
+!Schematic Rover.zip
+!OVERVIEW.zip
+
+# ------------------------------------------------------------------------------
+# CAD, Simulation & Finite Element Analysis (SolidWorks / Ansys / STEP Caches)
+# ------------------------------------------------------------------------------
+*.CWR
+*.GEN
+*.DAT
+*.OUT
+*.RST
+*.BAK
+*.SWP
+~$*
+*.tmp
+*Static*
+*Drop Test*
+
+# ------------------------------------------------------------------------------
+# Heavy Raw Video Logs & Screen Captures (>40MB)
+# (Curated lightweight demonstrations are tracked under assets/videos/)
+# ------------------------------------------------------------------------------
+*.avi
+ISRO/**/*.mp4
+ISRO Total File/**/*.mp4
+
+# Whitelist curated demonstration videos in assets
+!assets/videos/*.mp4
+
+# ------------------------------------------------------------------------------
+# OS-specific files
+# ------------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/

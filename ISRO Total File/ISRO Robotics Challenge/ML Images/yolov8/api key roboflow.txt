@@ -1,0 +1,18 @@
+!pip install roboflow
+
+from roboflow import Roboflow
+rf = Roboflow(api_key="tMYTwMuQnHqoJOuS1QxA")
+project = rf.workspace("priyabrata-basu").project("20_40craters")
+version = project.version(7)
+dataset = version.download("yolov8")
+
+
+
+
+!pip install roboflow
+
+from roboflow import Roboflow
+rf = Roboflow(api_key="tMYTwMuQnHqoJOuS1QxA")
+project = rf.workspace("priyabrata-basu").project("20_40craters-part-2")
+version = project.version(1)
+dataset = version.download("yolov8")

@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['C20', 'C40']
+
+roboflow:
+  workspace: priyabrata-basu
+  project: 20_40craters
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/priyabrata-basu/20_40craters/dataset/2

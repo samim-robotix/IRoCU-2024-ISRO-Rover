@@ -1,0 +1,16 @@
+[StartTime]
+wheel mill 1-pa6 strength test.MFC=5s
+[SolverState]
+wheel mill 1-pa6 strength test.MFC=2
+[MainFrame]
+wheel mill 1-pa6 strength test.MFC=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPMADAAAAADLBAAAAAEHEAAAAAGICAAAAA
+[ShowMin]
+wheel mill 1-pa6 strength test.MFC=No
+[SolverType]
+wheel mill 1-pa6 strength test.MFC=Linear Analysis
+[StudyType]
+wheel mill 1-pa6 strength test.MFC=0
+[StudyName]
+wheel mill 1-pa6 strength test.MFC=pa6 strength test
+[Solver]
+wheel mill 1-pa6 strength test.MFC=Sparse

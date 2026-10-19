@@ -1,0 +1,16 @@
+[StartTime]
+wheel rim-rim test.MFC=2s
+[SolverState]
+wheel rim-rim test.MFC=2
+[MainFrame]
+wheel rim-rim test.MFC=MCAAAAAAAAAAAAAABAAAAAAAPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPMADAAAAADLBAAAAAEHEAAAAAGICAAAAA
+[ShowMin]
+wheel rim-rim test.MFC=No
+[SolverType]
+wheel rim-rim test.MFC=Linear Analysis
+[StudyType]
+wheel rim-rim test.MFC=0
+[StudyName]
+wheel rim-rim test.MFC=rim test
+[Solver]
+wheel rim-rim test.MFC=Sparse

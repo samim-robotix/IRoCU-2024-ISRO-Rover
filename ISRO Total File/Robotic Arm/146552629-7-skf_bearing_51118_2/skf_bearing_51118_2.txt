@@ -1,0 +1,11 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"10-11012017-069978";"";
+"REFERENCE";"51118";"";
+"TraceParts.PartVersion";"1.2.6";"";
+"TraceParts.InstanceId";"10-11012017-069978246RQ3RD4LYYL9YDWI75AQ5MS";"";
+"TraceParts.PartTitle";"Thrust ball bearings, single direction, with plain housing washer";"";
+"SUPPLIER";"SKF";"";
+"DESIGN";"Thrust ball bearings, single direction, with plain housing washer, Bore Ø 90 mm, Outside Ø 120 mm";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"MASS";"0.67";"";
