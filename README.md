@@ -24,9 +24,9 @@
 
 ## Table of Contents
 1. [Competition Overview & National Achievement](#competition-overview--national-achievement)
-2. [System Architecture & Dataflow](#system-architecture--dataflow)
-3. [Core Engineering Features](#core-engineering-features)
-4. [Computer Vision & Edge AI Pipeline](#computer-vision--edge-ai-pipeline)
+2. [Hardware & Embedded System Architecture](#hardware--embedded-system-architecture)
+3. [Autonomous Perception & Control Pipeline](#autonomous-perception--control-pipeline)
+4. [Core Engineering Features](#core-engineering-features)
 5. [5-DOF Manipulator & Analytical Kinematics](#5-dof-manipulator--analytical-kinematics)
 6. [Bill of Materials (BOM) & Pinout Configuration](#bill-of-materials-bom--pinout-configuration)
 7. [Repository File & Directory Structure](#repository-file--directory-structure)
@@ -52,50 +52,50 @@ The **ISRO Robotics Challenge - URSC 2024 (IRoC-U 2024)** was organized by the *
 
 ---
 
-## System Architecture & Dataflow
+## Hardware & Embedded System Architecture
 
 The rover utilizes a **hierarchical dual-tier processing architecture**: an NVIDIA Jetson Edge AI computer executes compute-heavy perception, neural inference, and path planning, while an STM32F407 ARM Cortex-M4 microcontroller executes deterministic, low-latency motor commutation, CAN bus bus-arbitration, and sensor acquisition.
 
-```
-===================================================================================================
-                                      PROJECT OBSERACT SYSTEM ARCHITECTURE
-===================================================================================================
+![Hardware & Embedded System Architecture](assets/architecture.png)
 
- [ SENSORS & PERCEPTION ]
-   * Arducam 3D ToF Depth Camera (MIPI-CSI) --------+
-   * HD Optical Camera (USB / CSI) -----------------+
-   * Adafruit BNO055 9-DOF IMU (I2C Bus 1) --------+
-   * Gripper Piezoresistive FSR Force Sensor (ADC) -+---> [ NVIDIA JETSON ORIN / NANO ]
-   * End-Effector Limit Switches (GPIO) ------------+     (Edge AI & Autonomous High-Level Brain)
-                                                               |
-                                                               |--- Ultralytics YOLOv8 Inference
-                                                               |    (OB150, OB300, Sample, Craters)
-                                                               |--- 3D Point Cloud & Depth Buffer Map
-                                                               |--- Closed-Loop Heading / Waypoint Nav
-                                                               |--- Analytical Inverse Kinematics (IK)
-                                                               |
-                     +-----------------------------------------+
-                     | High-Level Movement Packets & Angle Targets
-                     v (I2C Bus @ Addr 0x09 / UART Serial 115200)
-       [ STM32F407VET6 ARM CORTEX-M4 MCU ]
-       (Low-Level Deterministic Real-Time Controller)
-         |
-         |---> SPI Interface (PA15 CS) ---> [ MCP2515 CAN Controller ] ---> CAN 2.0B Bus (500 Kbps)
-         |                                                                      |
-         |                                                                      +---> [ CAN Nodes ]
-         |---> Multi-Channel Bipolar Stepper Drivers --------------------------------+
-         |     (Current-Limiting & Thermal Protection)                               |
-         |                                                                           v
-         +---> High-Torque 24V 54 kg-cm Planetary Steppers (x6) ----------> [ ROCKER-BOGIE CHASSIS ]
-         |
-         +---> 5-DOF Robotic Arm Actuators (Base, Shoulder, Elbow, Gripper)-> [ MANIPULATOR ARM ]
+### Architectural Tier Breakdown
+1. **Perception & Telemetry Input Tier:**
+   - **Arducam 3D ToF Camera:** Streams 16-bit raw depth buffers over high-speed MIPI-CSI (2-lane) for obstacle range ($0.2\text{ m} - 4.0\text{ m}$) and bearing calculation.
+   - **HD Optical Camera:** Captures 1080p RGB frames at 30 FPS for YOLOv8 edge inference and ground station streaming.
+   - **Adafruit BNO055 9-DOF IMU:** Dedicated I2C Bus 1 interface feeding absolute Euler orientation (heading, pitch, roll) for closed-loop dynamic attitude compensation on 15° slopes.
+   - **End-Effector Gripper Sensors:** Analog Piezoresistive FSR (0–1023 ADC mapped to 0–100% force) and digital dual-limit switches for tactile feedback.
+2. **High-Level Compute Brain (NVIDIA Jetson Orin / Nano):**
+   - Executes real-time TensorRT-accelerated YOLOv8 models for craters and obstacles.
+   - Computes dynamic repulsive vector fields and closed-loop heading corrections.
+   - Houses the analytical 5-DOF inverse kinematics solver.
+   - Operates as **I2C Master** dispatching motion commands to the microcontroller at slave address `0x09`.
+   - Runs a TCP/IP video streaming server sending pickle-encoded frame buffers over 5 GHz RF.
+3. **Low-Level Deterministic Controller (STM32F407VET6 ARM Cortex-M4 @ 168 MHz):**
+   - High-speed SPI (`PA15 CS`) driving the **Microchip MCP2515 CAN Controller** (500 Kbps CAN 2.0B).
+   - Generates precision Step/Dir PWM pulses across 6 independent high-torque stepper channels.
+   - Monitored by dynamic current-limiting and thermal protection circuits.
+4. **Physical Actuation & Power:**
+   - **Locomotion:** Six 24V bipolar planetary geared steppers (54 kg-cm torque) driving custom regolith tread wheels.
+   - **Arm:** 5-DOF TRRT manipulator with aluminum links and servo/stepper actuators.
+   - **Power Distribution Board (PDB):** Step-down buck regulators (24V $\to$ 12V, 5V, 3.3V) with heavy-duty XT60 buses.
+   - **Emergency Kill Switch:** Mechanical latching switch hardwired in-line with the 24V master rail for instantaneous power cutoff.
 
- [ TELEMETRY & BASE STATION ]
-   [ Jetson Edge System ] <---> [ Ubiquiti 5GHz 23dBi LBE-M5-23 Link ] <---> [ BASE STATION GUI ]
-                                 - Low-Latency Socket Video Streaming           - Telemetry Dashboard
-                                 - JSON/Binary IMU & Pose Packets              - Real-Time Waypoint Map
-===================================================================================================
-```
+---
+
+## Autonomous Perception & Control Pipeline
+
+Project OBSERACT features an integrated, closed-loop autonomy pipeline operating in real time at **30 FPS**:
+
+![Autonomous Perception & Control Pipeline](assets/pipeline.png)
+
+### Dataflow Stages
+| Stage | Subsystem | Functionality & Technical Execution |
+|:---:|:---|:---|
+| **01** | **Sensor Ingestion** | Synchronized multi-modal capture of 1080p optical video, ToF 16-bit depth buffers, BNO055 9-DOF Euler angles, and analog FSR gripper readings. |
+| **02** | **Edge AI Perception** | TensorRT-accelerated dual-model YOLOv8 inference: (1) 20 cm & 40 cm crater detection (98% accuracy), (2) ISRO challenge objects (`OB150`, `OB300`, `SAMPLE`, `CONTAINER`), plus Arducam ToF depth colormapping. |
+| **03** | **Autonomous Navigation** | Vector Field Histogram (VFH) generating repulsive steering vectors; closed-loop `turn_to_angle(target)` heading stabilization with $\pm 1^\circ$ precision; automated crater avoidance logic. |
+| **04** | **Kinematics & Control** | Analytical 5-DOF Denavit-Hartenberg (D-H) Inverse Kinematics calculating joint angles $\theta_1 \dots \theta_5$; I2C command packet dispatch to STM32 (Addr `0x09`); CAN 2.0B frame broadcast via MCP2515. |
+| **05** | **Actuation & Telemetry** | 6-wheel planetary stepper microstepping; 15° slope climb and obstacle traversal; sample pickup and container drop; low-latency OpenCV socket streaming to ground station over 5 GHz Ubiquiti RF. |
 
 ---
 
@@ -119,47 +119,6 @@ The rover utilizes a **hierarchical dual-tier processing architecture**: an NVID
   - Custom serialization protocol packing frame headers (`struct.pack("Q", len(frame))`) for live ground control feeds.
 - **Fail-Safe Emergency Cutoff:**
   - Integrated hardware kill-switch triggering direct power isolation to all actuator circuits within milliseconds.
-
----
-
-## Computer Vision & Edge AI Pipeline
-
-The vision pipeline is optimized for edge inference on NVIDIA Jetson GPUs using custom-trained Ultralytics YOLOv8 architectures.
-
-```
-Raw Camera Frame / Depth Stream
-               │
-               ▼
-  ┌─────────────────────────┐
-  │ Preprocessing & Resize  │
-  └────────────┬────────────┘
-               ├──────────────────────────────────────────┐
-               ▼                                          ▼
-  ┌───────────────────────────┐             ┌───────────────────────────┐
-  │   Crater Detection Model  │             │ Obstacle & Target Model   │
-  │   (YOLOv8 Nano/Small)     │             │ (YOLOv8 Custom)           │
-  │   - 20 cm Craters         │             │ - OB150 (150 mm Cube)     │
-  │   - 40 cm Craters         │             │ - OB300 (300 mm Cube)     │
-  │   - 98% Test Accuracy     │             │ - SAMPLE (Collection Tube)│
-  │   - LabelMe Annotated     │             │ - CONTAINER (Drop Zone)   │
-  └────────────┬──────────────┘             └─────────────┬─────────────┘
-               └────────────────────┬─────────────────────┘
-                                    ▼
-                      ┌───────────────────────────┐
-                      │ Arducam ToF Depth Fusion  │
-                      │ (Distance & Bearing XYZ)  │
-                      └─────────────┬─────────────┘
-                                    ▼
-                      ┌───────────────────────────┐
-                      │ Vector Field Obstacle     │
-                      │ Avoidance & Waypoint Nav  │
-                      └───────────────────────────┘
-```
-
-### Perception Highlights
-1. **Crater Localization:** 500 images of simulated craters captured under varied arena lighting and annotated using LabelMe. Categorized into 20 cm and 40 cm classes, trained over 30 epochs, reaching **98% classification and localization accuracy**.
-2. **ISRO Obstacle Detection:** Custom YOLOv8 model detecting competition markers: `OB150` (150 mm climbing block), `OB300` (300 mm avoidance block), and `SAMPLE` tube.
-3. **Arducam Time-of-Flight (ToF) Spatial Mapping:** Generates real-time 4-meter depth buffers over MIPI-CSI, computing Euclidean distance and spatial angles to target objects.
 
 ---
 
@@ -240,6 +199,8 @@ $$\theta_5 = \arctan\left(\frac{r_{21} \cos\theta_1 - r_{11} \sin\theta_1}{r_{22
 IRoCU-2024/
 ├── assets/
 │   ├── banner.png                              # High-tech project banner
+│   ├── architecture.png                        # Hardware & embedded system architecture
+│   ├── pipeline.png                            # Autonomous perception & control pipeline
 │   ├── photos/                                 # Hardware and arena prototype photos
 │   │   ├── crater_detection_yolov8.jpeg        # YOLOv8 crater inference validation
 │   │   ├── crater_training_metrics.png         # Precision-recall & loss curves
@@ -273,6 +234,7 @@ IRoCU-2024/
 │   │   └── obseract/                           # Inverse kinematics regression models
 │   ├── New Designs/                            # SolidWorks CAD assemblies (.SLDASM, .SLDPRT)
 │   └── OBS_Chassis/                            # Rocker-Bogie chassis structural models
+├── generate_diagrams.py                        # Automated architecture & pipeline renderer
 ├── .gitignore                                  # Optimized Git exclusion filters
 └── README.md                                   # Production project documentation
 ```
