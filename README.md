@@ -77,7 +77,7 @@ _Moments celebrating the All India Rank 5th achievement, including the felicitat
       <b>Felicitation by Director, URSC</b>
     </td>
     <td width="50%" align="center">
-      <img src="PASTE_YOUR_RAW_CERTIFICATE_LINK_HERE" alt="Official Achievement Certificate" width="100%"><br>
+      <img src="(https://github.com/samim-robotix/IRoCU-2024-ISRO-Rover/blob/master/assets/photos/certificate.jpg)" alt="Official Achievement Certificate" width="100%"><br>
       <b>Official Achievement Certificate & Token</b>
     </td>
   </tr>
