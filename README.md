@@ -22,6 +22,34 @@
 
 ---
 
+
+
+
+
+
+
+
+https://github.com/user-attachments/assets/1fea89f5-3243-4703-b733-9410708686cc
+
+https://github.com/user-attachments/assets/83157b1c-a9e9-4bf5-b669-3bb103190346
+
+https://github.com/user-attachments/assets/7a4b1e10-6299-4aff-aaf4-be91f2c25774
+
+https://github.com/user-attachments/assets/a8de3687-ca90-4187-93c7-3bbb9b5a7004
+
+https://github.com/user-attachments/assets/2eed0919-5cf9-45e3-8780-65f5be33dcf5
+
+https://github.com/user-attachments/assets/71d96060-224c-4bb0-9c72-89f13145069e
+
+
+
+
+
+
+
+
+
+
 ## Table of Contents
 1. [Competition Overview & National Achievement](#competition-overview--national-achievement)
 2. [Hardware & Embedded System Architecture](#hardware--embedded-system-architecture)
