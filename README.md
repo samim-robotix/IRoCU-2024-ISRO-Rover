@@ -22,6 +22,87 @@
 
 ---
 
+# Team OBSERACT - IROC-U 2024 Rover Project
+
+<!-- PROJECT POSTER / INFOGRAPHIC (Full Width) -->
+<p align="center">
+  <img src="asset/image_y-81Qz.png" alt="Our IROC-U 2024 Journey Poster" width="100%">
+</p>
+
+## 🖼️ Project Gallery
+
+### 🤖 Rover Design & Autonomous Testing
+_Detailed views of the Team OBSERACT rover hardware, its sensor arrays, and autonomous obstacle navigation system during site testing._
+
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <img src="asset/image_MuA1FB.png" alt="Rover Close-up View" width="100%"><br>
+      <b>Rover Chassis & Sensor Array</b>
+    </td>
+    <td width="50%" align="center">
+      <img src="asset/image_KLAcOD.png" alt="Autonomous Navigation Testing" width="100%"><br>
+      <b>Computer Vision & Obstacle Avoidance</b>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 🏆 Competition Finals at ISRO (URSC)
+_Snapshots from the final arena staging at the U. R. Rao Satellite Centre (URSC), showing the full vehicle line-up alongside competing national universities._
+
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <img src="asset/image_0O8UWX.png" alt="ISRO Staging Arena Lineup" width="100%"><br>
+      <b>Final Arena Presentation at URSC</b>
+    </td>
+    <td width="50%" align="center">
+      <img src="asset/image_61FrbN.png" alt="Team Testing Field" width="100%"><br>
+      <b>Field Calibration & Systems Check</b>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 🥇 Awards, Recognition & Media Coverage
+_Moments celebrating the All India Rank 5th achievement, including the felicitation ceremony by the Director of URSC, exhibitions on National Space Day at Bharat Mandapam, and local newspaper coverage._
+
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <img src="asset/image_FUDXmz.png" alt="Team Receiving Trophy" width="100%"><br>
+      <b>Felicitation by Director, URSC</b>
+    </td>
+    <td width="50%" align="center">
+      <img src="asset/image_aFOOTl.png" alt="Individual Felicitation" width="100%"><br>
+      <b>Official Token of Appreciation</b>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="asset/image_ktsUp0.png" alt="Posing with Trophy at URSC Sign" width="100%"><br>
+      <b>Celebrating at URSC Headquarters</b>
+    </td>
+    <td width="50%" align="center">
+      <img src="asset/image_e1hItP.png" alt="National Space Day Exhibition" width="100%"><br>
+      <b>National Space Day Feature (Bharat Mandapam)</b>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="asset/image_i1Bcuw.png" alt="Newspaper Coverage" width="65%"><br>
+      <b>Press Coverage: Highlighting Jadavpur University's 5th Place Achievement</b>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 📝 Project Overview and Documentation
+<!-- Your technical content, installation guide, and code explanation starts here -->
 
 
 
