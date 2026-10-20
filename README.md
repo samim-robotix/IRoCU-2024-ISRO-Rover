@@ -26,84 +26,96 @@
 
 <!-- PROJECT POSTER / INFOGRAPHIC (Full Width) -->
 <p align="center">
-  <img src="PASTE_YOUR_RAW_POSTER_LINK_HERE" alt="Our IROC-U 2024 Journey Poster" width="100%">
+  <img src="https://raw.githubusercontent.com/samim-robotix/IRoCU-2024-ISRO-Rover/master/assets/photos/team%20banner.jpg" alt="Our IROC-U 2024 Journey Poster" width="100%">
 </p>
 
 ## 🖼️ Project Gallery
 
-### 🤖 Rover Design & Autonomous Testing
-_Detailed views of the Team OBSERACT rover hardware, its sensor arrays, and autonomous obstacle navigation system during site testing._
+### 🤖 Rover Design, Autonomous Testing & Engineering
+_Detailed views of the Team OBSERACT rover hardware, computer vision inference, and obstacle navigation systems._
 
 <table width="100%">
   <tr>
     <td width="50%" align="center">
-      <img src="PASTE_YOUR_RAW_ROVER_CHASSIS_LINK_HERE" alt="Rover Close-up View" width="100%"><br>
-      <b>Rover Chassis & Sensor Array</b>
+      <img src="https://raw.githubusercontent.com/samim-robotix/IRoCU-2024-ISRO-Rover/master/assets/photos/rover_hardware_prototype.jpg" alt="Rover Hardware Prototype" width="100%"><br>
+      <b>Rover Hardware & Chassis Prototype</b>
     </td>
     <td width="50%" align="center">
-      <img src="PASTE_YOUR_RAW_ROVER_TESTING_LINK_HERE" alt="Autonomous Navigation Testing" width="100%"><br>
-      <b>Computer Vision & Obstacle Avoidance</b>
+      <img src="https://raw.githubusercontent.com/samim-robotix/IRoCU-2024-ISRO-Rover/master/assets/photos/rover%20ju.PNG" alt="Autonomous Navigation Testing" width="100%"><br>
+      <b>Computer Vision & Obstacle Avoidance Testing</b>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="https://raw.githubusercontent.com/samim-robotix/IRoCU-2024-ISRO-Rover/master/assets/photos/crater_detection_yolov8.jpeg" alt="YOLOv8 Crater Detection" width="100%"><br>
+      <b>YOLOv8 Crater Detection Inference</b>
+    </td>
+    <td width="50%" align="center">
+      <img src="https://raw.githubusercontent.com/samim-robotix/IRoCU-2024-ISRO-Rover/master/assets/photos/rover%20isro.WEBP" alt="Rover at ISRO Arena" width="100%"><br>
+      <b>Final Rover Configuration at ISRO Arena</b>
     </td>
   </tr>
 </table>
 
 ---
 
-### 🏆 Competition Finals at ISRO (URSC)
-_Snapshots from the final arena staging at the U. R. Rao Satellite Centre (URSC), showing the full vehicle line-up alongside competing national universities._
+### 🚀 Team Journey & ISRO Finals
+_Snapshots of the team during field calibration and the final staging at the U. R. Rao Satellite Centre (URSC)._
 
 <table width="100%">
   <tr>
     <td width="50%" align="center">
-      <img src="PASTE_YOUR_RAW_ISRO_ARENA_LINK_HERE" alt="ISRO Staging Arena Lineup" width="100%"><br>
-      <b>Final Arena Presentation at URSC</b>
+      <img src="https://raw.githubusercontent.com/samim-robotix/IRoCU-2024-ISRO-Rover/master/assets/photos/team%20jadavpur.jpg" alt="Team Jadavpur Testing Field" width="100%"><br>
+      <b>Team at Jadavpur University Testing Site</b>
     </td>
     <td width="50%" align="center">
-      <img src="PASTE_YOUR_RAW_TEAM_FIELD_LINK_HERE" alt="Team Testing Field" width="100%"><br>
-      <b>Field Calibration & Systems Check</b>
-    </td>
-  </tr>
-</table>
-
----
-
-### 🥇 Awards, Recognition & Media Coverage
-_Moments celebrating the All India Rank 5th achievement, including the felicitation ceremony by the Director of URSC, exhibitions on National Space Day at Bharat Mandapam, and local newspaper coverage._
-
-<table width="100%">
-  <tr>
-    <td width="50%" align="center">
-      <img src="PASTE_YOUR_RAW_TEAM_TROPHY_LINK_HERE" alt="Team Receiving Trophy" width="100%"><br>
-      <b>Felicitation by Director, URSC</b>
-    </td>
-    <td width="50%" align="center">
-      <img src="(https://github.com/samim-robotix/IRoCU-2024-ISRO-Rover/blob/master/assets/photos/certificate.jpg)" alt="Official Achievement Certificate" width="100%"><br>
-      <b>Official Achievement Certificate & Token</b>
+      <img src="https://raw.githubusercontent.com/samim-robotix/IRoCU-2024-ISRO-Rover/master/assets/photos/team%20isro%201.jpg" alt="ISRO Staging Arena Lineup" width="100%"><br>
+      <b>Team OBSERACT at URSC Staging Arena</b>
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
-      <img src="PASTE_YOUR_RAW_HQ_TROPHY_LINK_HERE" alt="Posing with Trophy at URSC Sign" width="100%"><br>
+      <img src="https://raw.githubusercontent.com/samim-robotix/IRoCU-2024-ISRO-Rover/master/assets/photos/team%20isro.jpg" alt="Team Receiving Trophy" width="100%"><br>
+      <b>Felicitation by the Director, URSC</b>
+    </td>
+    <td width="50%" align="center">
+      <img src="https://raw.githubusercontent.com/samim-robotix/IRoCU-2024-ISRO-Rover/master/assets/photos/single%20fron.JPG" alt="Posing at URSC Sign" width="100%"><br>
       <b>Celebrating at URSC Headquarters</b>
     </td>
+  </tr>
+</table>
+
+---
+
+### 🏆 Awards, Certificates & Media Coverage
+_Moments celebrating the All India Rank 5th achievement and the widespread recognition of our work._
+
+<table width="100%">
+  <tr>
     <td width="50%" align="center">
-      <img src="PASTE_YOUR_RAW_SPACE_DAY_LINK_HERE" alt="National Space Day Exhibition" width="100%"><br>
-      <b>National Space Day Feature (Bharat Mandapam)</b>
+      <img src="https://raw.githubusercontent.com/samim-robotix/IRoCU-2024-ISRO-Rover/master/assets/photos/certificate.jpg" alt="Official Achievement Certificate" width="100%"><br>
+      <b>Official Achievement Certificate</b>
+    </td>
+    <td width="50%" align="center">
+      <img src="https://raw.githubusercontent.com/samim-robotix/IRoCU-2024-ISRO-Rover/master/assets/photos/single%20isro.jpeg" alt="Receiving Award Token" width="100%"><br>
+      <b>Receiving the Official Recognition Token</b>
     </td>
   </tr>
   <tr>
-    <td colspan="2" align="center">
-      <img src="PASTE_YOUR_RAW_NEWSPAPER_LINK_HERE" alt="Newspaper Coverage" width="65%"><br>
-      <b>Press Coverage: Highlighting Jadavpur University's 5th Place Achievement</b>
+    <td width="50%" align="center">
+      <img src="https://raw.githubusercontent.com/samim-robotix/IRoCU-2024-ISRO-Rover/master/assets/photos/news%20isro.PNG" alt="News Coverage 1" width="100%"><br>
+      <b>Press Coverage Highlighting the Achievement</b>
+    </td>
+    <td width="50%" align="center">
+      <img src="https://raw.githubusercontent.com/samim-robotix/IRoCU-2024-ISRO-Rover/master/assets/photos/kalam%20news.jpg" alt="News Coverage 2" width="100%"><br>
+      <b>Kalam News Feature Report</b>
     </td>
   </tr>
 </table>
 
 ---
 
-
-
-
+### 🎥 Field Test Videos & Demonstrations
 
 https://github.com/user-attachments/assets/1fea89f5-3243-4703-b733-9410708686cc
 
@@ -117,17 +129,9 @@ https://github.com/user-attachments/assets/2eed0919-5cf9-45e3-8780-65f5be33dcf5
 
 https://github.com/user-attachments/assets/71d96060-224c-4bb0-9c72-89f13145069e
 
-
-
-
-
-
+---
 
 ## 📝 Project Overview and Documentation
-
-## 📝 Project Overview and Documentation
-<!-- Your technical content, installation guide, and code explanation starts here -->
-
 
 ## Table of Contents
 1. [Competition Overview & National Achievement](#competition-overview--national-achievement)
@@ -143,6 +147,7 @@ https://github.com/user-attachments/assets/71d96060-224c-4bb0-9c72-89f13145069e
 11. [License & Acknowledgments](#license--acknowledgments)
 
 ---
+
 
 ## Competition Overview & National Achievement
 
@@ -167,7 +172,7 @@ The rover utilizes a **hierarchical dual-tier processing architecture**: an NVID
 
 ### Architectural Tier Breakdown
 1. **Perception & Telemetry Input Tier:**
-   - **Arducam 3D ToF Camera:** Streams 16-bit raw depth buffers over high-speed MIPI-CSI (2-lane) for obstacle range ($0.2\text{ m} - 4.0\text{ m}$) and bearing calculation.
+   - **Arducam 3D ToF Camera:** Streams 16-bit raw depth buffers over high-speed MIPI-CSI (2-lane) for obstacle range (0.2m-4.0m) and bearing calculation.
    - **HD Optical Camera:** Captures 1080p RGB frames at 30 FPS for YOLOv8 edge inference and ground station streaming.
    - **Adafruit BNO055 9-DOF IMU:** Dedicated I2C Bus 1 interface feeding absolute Euler orientation (heading, pitch, roll) for closed-loop dynamic attitude compensation on 15° slopes.
    - **End-Effector Gripper Sensors:** Analog Piezoresistive FSR (0–1023 ADC mapped to 0–100% force) and digital dual-limit switches for tactile feedback.
@@ -184,7 +189,7 @@ The rover utilizes a **hierarchical dual-tier processing architecture**: an NVID
 4. **Physical Actuation & Power:**
    - **Locomotion:** Six 24V bipolar planetary geared steppers (54 kg-cm torque) driving custom regolith tread wheels.
    - **Arm:** 5-DOF TRRT manipulator with aluminum links and servo/stepper actuators.
-   - **Power Distribution Board (PDB):** Step-down buck regulators (24V $\to$ 12V, 5V, 3.3V) with heavy-duty XT60 buses.
+   - **Power Distribution Board (PDB):** Step-down buck regulators (24V  12V, 5V, 3.3V) with heavy-duty XT60 buses.
    - **Emergency Kill Switch:** Mechanical latching switch hardwired in-line with the 24V master rail for instantaneous power cutoff.
 
 ---
@@ -200,7 +205,7 @@ Project OBSERACT features an integrated, closed-loop autonomy pipeline operating
 |:---:|:---|:---|
 | **01** | **Sensor Ingestion** | Synchronized multi-modal capture of 1080p optical video, ToF 16-bit depth buffers, BNO055 9-DOF Euler angles, and analog FSR gripper readings. |
 | **02** | **Edge AI Perception** | TensorRT-accelerated dual-model YOLOv8 inference: (1) 20 cm & 40 cm crater detection (98% accuracy), (2) ISRO challenge objects (`OB150`, `OB300`, `SAMPLE`, `CONTAINER`), plus Arducam ToF depth colormapping. |
-| **03** | **Autonomous Navigation** | Vector Field Histogram (VFH) generating repulsive steering vectors; closed-loop `turn_to_angle(target)` heading stabilization with $\pm 1^\circ$ precision; automated crater avoidance logic. |
+| **03** | **Autonomous Navigation** | Vector Field Histogram (VFH) generating repulsive steering vectors; closed-loop `turn_to_angle(target)` heading stabilization with 1 precision; automated crater avoidance logic. |
 | **04** | **Kinematics & Control** | Analytical 5-DOF Denavit-Hartenberg (D-H) Inverse Kinematics calculating joint angles $\theta_1 \dots \theta_5$; I2C command packet dispatch to STM32 (Addr `0x09`); CAN 2.0B frame broadcast via MCP2515. |
 | **05** | **Actuation & Telemetry** | 6-wheel planetary stepper microstepping; 15° slope climb and obstacle traversal; sample pickup and container drop; low-latency OpenCV socket streaming to ground station over 5 GHz Ubiquiti RF. |
 
@@ -220,7 +225,7 @@ Project OBSERACT features an integrated, closed-loop autonomy pipeline operating
   - **I2C Master/Slave Protocol:** Jetson Nano operates as I2C master sending motion primitives (`1: Forward`, `2: Backward`, `3: Left`, `4: Right`, `5: Stop`, `6: Heading Target`) to the microcontroller slave at address `0x09`.
 - **Closed-Loop Heading Stabilization:**
   - Real-time absolute Euler orientation feedback sourced from the **Adafruit BNO055 9-DOF IMU**.
-  - Dynamic turning algorithms (`turn_to_angle`) maintain trajectory accuracy within $\pm 1^\circ$ tolerance.
+  - Dynamic turning algorithms (`turn_to_angle`) maintain trajectory accuracy within 1 tolerance.
 - **Edge-to-Ground High-Bandwidth Telemetry:**
   - Long-range directional Ubiquiti LiteBeam 5GHz antenna (23 dBi gain) running low-latency TCP/IP socket video streaming.
   - Custom serialization protocol packing frame headers (`struct.pack("Q", len(frame))`) for live ground control feeds.
@@ -234,26 +239,31 @@ Project OBSERACT features an integrated, closed-loop autonomy pipeline operating
 The rover carries a 5-Degree-of-Freedom robotic arm configured in a **TRRT** (Twist-Revolute-Revolute-Twist) kinematic arrangement built with lightweight CNC aluminum links and dual-bearing revolute joints.
 
 ### Denavit-Hartenberg (D-H) Parameter Table
-| Link ($i$) | Joint Angle ($\theta_i$) | Link Offset ($d_i$) | Link Twist ($\alpha_i$) | Link Length ($a_i$) |
+| Link (i) | Joint Angle (i) | Link Offset (di) | Link Twist (i) | Link Length (ai) |
 |:---:|:---:|:---:|:---:|:---:|
-| **1** | $\theta_1$ | $0$ | $-90^\circ$ | $0$ |
-| **2** | $\theta_2$ | $0$ | $0^\circ$ | $L_1$ ($228.39\text{ mm}$) |
-| **3** | $\theta_3$ | $0$ | $0^\circ$ | $L_2$ ($248.00\text{ mm}$) |
-| **4** | $\theta_4$ | $0$ | $+90^\circ$ | $0$ |
-| **5** | $\theta_5$ | $0$ | $0^\circ$ | $0$ |
+| **1** | 1 | 0 | -90 | 0 |
+| **2** | 2 | 0 | 0 | L1 (228.39mm) |
+| **3** | 3 | 0 | 0 | L2 (248.00mm) |
+| **4** | 4 | 0 | +90 | 0 |
+| **5** | 5 | 0 | 0 | 0 |
 
 ### Analytical Inverse Kinematics Formulation
-Given target end-effector coordinates $(q_x, q_y, q_z)$ and orientation matrix elements $r_{ij}$:
+Given target end-effector coordinates (qx,qy,qz) and orientation matrix elements rij:
 
-$$\theta_1 = \text{atan2}(q_y, q_x)$$
 
-$$\theta_3 = \arccos\left(\frac{q_x^2 + q_y^2 + q_z^2 - L_1^2 - L_2^2}{2 L_1 L_2}\right)$$
+1=atan2(qy,qx)
 
-$$\theta_2 = \arctan\left(\frac{L_1 + L_2 \cos\theta_3}{L_2 \sin\theta_3}\right) + \arctan\left(\frac{q_x \cos\theta_1 + q_y \sin\theta_1}{-q_z}\right)$$
 
-$$\theta_4 = \arctan\left(\frac{r_{13} \cos\theta_1 + r_{23} \sin\theta_1}{r_{33}}\right) - \theta_2 - \theta_3$$
+3=qx2+qy2+qz2-L12-L222L1L2
 
-$$\theta_5 = \arctan\left(\frac{r_{21} \cos\theta_1 - r_{11} \sin\theta_1}{r_{22} \cos\theta_1 - r_{21} \sin\theta_1}\right)$$
+
+2=L1+L23L23+qx1+qy1-qz
+
+
+4=r131+r231r33-2-3
+
+
+5=r211-r111r221-r211
 
 *Closed-form solutions are implemented in high-performance C/C++ ([`arm_manipulator_C_Code.ino`](ISRO/arm_manipulator_C_Code/arm_manipulator_C_Code.ino)) and Python for real-time trajectory planning.*
 
@@ -278,7 +288,7 @@ $$\theta_5 = \arctan\left(\frac{r_{21} \cos\theta_1 - r_{11} \sin\theta_1}{r_{22
 | **End Effector** | Limit Switches | Microswitches | 2 | Mechanical over-travel protection |
 | **RF Communications** | Directional Long-Range Antenna| Ubiquiti LiteBeam LBE-M5-23 (5 GHz, 23 dBi)| 2 | Low-latency telemetry link (Rover + Base) |
 | **Power Storage** | Main Battery Pack | 24V High-Discharge Lithium-Ion Pack | 1 | System master power source |
-| **Power Distribution** | Custom PDB | Buck Converters (24V $\to$ 12V, 5V, 3.3V) + XT60 | 1 | Regulated rails & noise filtering |
+| **Power Distribution** | Custom PDB | Buck Converters (24V  12V, 5V, 3.3V) + XT60 | 1 | Regulated rails & noise filtering |
 | **Safety System** | Emergency Kill Switch | High-Current Latching E-Stop Switch | 1 | Instantaneous actuator power cut |
 
 ### GPIO Pinout & Communication Interconnect Map
@@ -292,7 +302,7 @@ $$\theta_5 = \arctan\left(\frac{r_{21} \cos\theta_1 - r_{11} \sin\theta_1}{r_{22
 | **MCP2515 CAN** | `INT` | STM32F407 Interrupt GPIO | Active-Low Interrupt | Frame Receive Notification |
 | **BNO055 9-DOF IMU**| `SDA` | Jetson Pin 3 / STM32 `PB7` | I2C (3.3V Pull-up) | Serial Data Line |
 | **BNO055 9-DOF IMU**| `SCL` | Jetson Pin 5 / STM32 `PB6` | I2C (3.3V Pull-up) | Serial Clock Line |
-| **MCU Slave Port** | `SDA / SCL`| Jetson I2C Bus 1 $\to$ MCU Addr `0x09`| I2C (3.3V) | Motion command link (Jetson $\to$ MCU) |
+| **MCU Slave Port** | `SDA / SCL`| Jetson I2C Bus 1  MCU Addr `0x09`| I2C (3.3V) | Motion command link (Jetson  MCU) |
 | **Gripper FSR** | `V_OUT` | STM32 ADC Channel `A0` | Analog (0 - 3.3V) | Force mapping ($0 - 100\%$) |
 | **Gripper Limit SW**| `SIGNAL` | STM32 Digital GPIO (Pull-up) | Digital Input | Stroke limit safety interlock |
 | **Arducam Depth Cam**| `CSI-2` | Jetson 15-pin / 22-pin MIPI Port | High-Speed MIPI-CSI | Real-time ToF raw depth stream |
