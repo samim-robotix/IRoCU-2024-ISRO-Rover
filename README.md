@@ -415,7 +415,7 @@ python3 client.py --host <ROVER_IP_ADDRESS> --port 9999
 
 ---
 
-## Media Showcase & Field Tests
+## Field Tests
 
 ### Hardware Prototype & Deep Learning Outputs
 | Fabricated Rover Prototype | YOLOv8 Crater Detection | Model Metrics |
@@ -429,13 +429,6 @@ python3 client.py --host <ROVER_IP_ADDRESS> --port 9999
 | ![150mm Block](assets/photos/obstacle_150mm_cube.jpg) | ![300mm Block](assets/photos/obstacle_300mm_cube.jpg) | ![Sample Tube](assets/photos/obstacle_sample_tube.jpg) |
 | *Scaling & traversal target* | *Autonomous avoidance obstacle* | *5-DOF manipulator pickup target* |
 
-### Demonstration Video Recordings
-Demonstration video files are located in [`assets/videos/`](assets/videos/):
-- **Locomotion Traverse:** [`rover_mobility_demo.mp4`](assets/videos/rover_mobility_demo.mp4) — Demonstrates 6-wheel differential traction across uneven terrain.
-- **Obstacle Clearance:** [`obstacle_traversal_demo.mp4`](assets/videos/obstacle_traversal_demo.mp4) — High-clearance rocker-bogie traversing obstacles without chassis tilting.
-- **Sample Manipulation:** [`robotic_arm_demo.mp4`](assets/videos/robotic_arm_demo.mp4) — Precision sample grasping with real-time FSR force feedback.
-
----
 
 ## Team & Mentorship
 
